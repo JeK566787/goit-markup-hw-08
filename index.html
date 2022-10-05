@@ -126,15 +126,39 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="occupations-pics">
             <li class="occupations-pic">
-              <img src="images/pics/box1.jpg" alt="laptop" width="370" />
+              <img
+                class="pic-img"
+                srcset="images\pics\img-1_lg.jpg 1x, images\pics\img-1_lg@2x.jpg 2x"
+                src="images\pics\img-1_lg.jpg"
+                alt="laptop"
+                width="370"
+                height="294"
+                loading="lazy"
+              />
               <h3 class="occup-pic-title">Десктопні додатки</h3>
             </li>
             <li class="occupations-pic">
-              <img src="images/pics/box2.jpg" alt="phone" width="370" />
+              <img
+                class="pic-img"
+                srcset="images\pics\img-2_lg.jpg 1x, images\pics\img-2_lg@2x.jpg 2x"
+                src="images\pics\img-2_lg.jpg"
+                alt="phone"
+                width="370"
+                height="294"
+                loading="lazy"
+              />
               <h3 class="occup-pic-title">Мобільні додатки</h3>
             </li>
             <li class="occupations-pic">
-              <img src="images/pics/box3.jpg" alt="tablet" width="370" />
+              <img
+                class="pic-img"
+                srcset="images\pics\img-3_lg.jpg 1x, images\pics\img-3_lg@2x.jpg 2x"
+                src="images\pics\img-3_lg.jpg"
+                alt="tablet"
+                width="370"
+                height="294"
+                loading="lazy"
+              />
               <h3 class="occup-pic-title">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -145,7 +169,44 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-cards">
             <li class="team-card">
-              <img src="images/photos/img.jpg" alt="Product-esigner" width="270" />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images\photos\desktop\img-1_lg.jpg    1x,
+                    images\photos\desktop\img-1_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images\photos\tablet\img-1_md.jpg    1x,
+                    images\photos\tablet\img-1_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    images\photos\mobile\img-1_sm.jpg    1x,
+                    images\photos\mobile\img-1_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="images\photos\mobile\img-1_sm.jpg"
+                  alt="Product-esigner"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-card-text">
                 <h3 class="member-name">Ігор Дем'яненко</h3>
                 <p class="member-job">Product Designer</p>
@@ -174,7 +235,44 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="images/photos/img(1).jpg" alt="Frontend-Developer" width="270" />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images\photos\desktop\img-2_lg.jpg    1x,
+                    images\photos\desktop\img-2_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images\photos\tablet\img-2_md.jpg    1x,
+                    images\photos\tablet\img-2_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    images\photos\mobile\img-2_sm.jpg    1x,
+                    images\photos\mobile\img-2_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="images\photos\mobile\img-2_sm.jpg"
+                  alt="Frontend-Developer"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-card-text">
                 <h3 class="member-name">Ольга Рєпіна</h3>
                 <p class="member-job">Frontend Developer</p>
@@ -203,7 +301,44 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="images/photos/img(2).jpg" alt="Marketing" width="270" />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images\photos\desktop\img-3_lg.jpg    1x,
+                    images\photos\desktop\img-3_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images\photos\tablet\img-3_md.jpg    1x,
+                    images\photos\tablet\img-3_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    images\photos\mobile\img-3_sm.jpg    1x,
+                    images\photos\mobile\img-3_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="images\photos\mobile\img-3_sm.jpg"
+                  alt="Marketing"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-card-text">
                 <h3 class="member-name">Микола Тарасов</h3>
                 <p class="member-job">Marketing</p>
@@ -232,7 +367,44 @@
               </div>
             </li>
             <li class="team-card">
-              <img src="images/photos/img(3).jpg" alt="UI-Designer" width="270" />
+              <picture>
+                <!-- Desktop screen -->
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    images\photos\desktop\img-4_lg.jpg    1x,
+                    images\photos\desktop\img-4_lg@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Tablet screen -->
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    images\photos\tablet\img-4_md.jpg    1x,
+                    images\photos\tablet\img-4_md@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <!-- Mobile screen -->
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    images\photos\mobile\img-4_sm.jpg    1x,
+                    images\photos\mobile\img-4_sm@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <img
+                  class="card-img"
+                  src="images\photos\mobile\img-4_sm.jpg"
+                  alt="UI-Designer"
+                  width="450"
+                  height="460"
+                  loading="lazy"
+                />
+              </picture>
+
               <div class="team-card-text">
                 <h3 class="member-name">Михайло Єрмаков</h3>
                 <p class="member-job">UI Designer</p>

@@ -1,6 +1,22 @@
 .portfolio-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+}
+.portfolio-card {
+  /* width: calc(100%-2*30px(60px-количество мардж. умнож. на значение))/3  -- длинна в процентах*/
+  // width: 370px;
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+
+  // margin-right: 30px;
+  // margin-bottom: 30px;
 }
 .overlay-card {
   position: relative;
@@ -33,24 +49,21 @@
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-.portfolio-card {
-  /* width: calc(100%-2*30px(60px-количество мардж. умнож. на значение))/3  -- длинна в процентах*/
-  width: 370px;
 
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
 .port-card-link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 .port-card-link:hover,
 .port-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.port-card-link {
-  display: block;
-}
+// .port-card-link {
+//   display: block;
+// }
 .portfolio-card:nth-child(3n) {
   /* убирает у каждого третьего элемента правый марджин */
   margin-right: 0px;
@@ -75,4 +88,5 @@
 }
 .portf-card-text {
   padding: 20px 24px;
+  flex-grow: 1;
 }

@@ -35,17 +35,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.overlay {
-  max-width: 1600px;
-  height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/Img.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 textarea {
   resize: none;
 }

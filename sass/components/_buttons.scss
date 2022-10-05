@@ -3,10 +3,16 @@
   // justify-content: center;
   margin-bottom: 50px;
   flex-wrap: wrap;
+  margin-left: -8px;
+  margin-top: -15px;
 }
-.button-item:not(:first-child) {
+.button-item {
   margin-left: 8px;
+  margin-top: 15px;
 }
+// .button-item:not(:first-child) {
+//   margin-left: 8px;
+// }
 // .button-item:nth-child(5) {
 //   margin-top: 15px;
 // }

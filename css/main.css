@@ -330,7 +330,7 @@ textarea {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bk-white-color);
-  width: 360px;
+  max-width: 360px;
   margin: 0 auto 30px auto;
 }
 @media screen and (min-width: 1200px) {
@@ -338,7 +338,7 @@ textarea {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-    width: 696px;
+    max-width: 696px;
   }
 }
 
@@ -493,7 +493,7 @@ textarea {
     width: 354px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team-card {
     width: 270px;
   }
@@ -686,6 +686,10 @@ textarea {
   }
 }
 
+.footer-item:not(:first-child) {
+  margin-top: 60px;
+}
+
 @media screen and (min-width: 1200px) {
   .footer-item .team-media-body {
     -webkit-box-pack: start;
@@ -694,8 +698,16 @@ textarea {
   }
 }
 
-.footer-item {
-  margin-top: 60px;
+@media screen and (min-width: 768px) {
+  .footer-body > .footer-item:nth-child(2) {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-body > .footer-item {
+    margin-top: 0px;
+  }
 }
 
 .footer-title {
@@ -720,6 +732,11 @@ textarea {
   padding: 10px 28px;
   min-width: 200px;
   margin: 20px auto;
+}
+@media screen and (min-width: 1200px) {
+  .footer .hero-button {
+    margin: 0px;
+  }
 }
 
 /* ------------------------------------------------------- */
@@ -946,6 +963,13 @@ textarea {
       flex-wrap: wrap;
   margin-left: -8px;
   margin-top: -15px;
+}
+@media screen and (min-width: 768px) {
+  .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .button-item {

@@ -47,8 +47,13 @@ textarea {
 }
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.18;
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+
   text-align: center;
 
   color: var(--title-text-color);
